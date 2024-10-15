@@ -65,6 +65,8 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
             text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
         }
         input[type="text"],
         input[type="email"] {
@@ -74,7 +76,8 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        button {
+        button,
+        input[type="submit"] {
             background-color: #3498db;
             color: white;
             padding: 10px 20px;
@@ -83,7 +86,8 @@
             cursor: pointer;
             width: 100%;
         }
-        button:hover {
+        button:hover,
+        input[type="submit"]:hover {
             background-color: #2980b9;
         }
     </style>
@@ -118,17 +122,29 @@
         </div>
     </section>
 
+    <section class="form-section">
+        <h2>Accedi alla prova gratuita di 1 mese</h2>
+
+        <!-- Codice del form GetResponse -->
+        <form action="https://app.getresponse.com/add_subscriber.html" method="POST" accept-charset="utf-8">
+            <input type="text" name="name" placeholder="Il tuo nome" required>
+            <input type="email" name="email" placeholder="La tua email" required>
+            <input type="hidden" name="campaign_token" value="FhIFh">
+            <input type="hidden" name="start_day" value="0">
+            <input type="submit" value="Iscriviti">
+        </form>
+
+    </section>
 </div>
+
 <!-- GetResponse Analytics -->
-  <script type="text/javascript">
-      
+<script type="text/javascript">
   (function(m, o, n, t, e, r, _){
           m['__GetResponseAnalyticsObject'] = e;m[e] = m[e] || function() {(m[e].q = m[e].q || []).push(arguments)};
           r = o.createElement(n);_ = o.getElementsByTagName(n)[0];r.async = 1;r.src = t;r.setAttribute('crossorigin', 'use-credentials');_.parentNode .insertBefore(r, _);
       })(window, document, 'script', 'https://an.gr-wcon.com/script/1d1c6206-3968-4848-801d-98df1f444c92/ga.js', 'GrTracking');
+</script>
+<!-- End GetResponse Analytics -->
 
-
-  </script>
-  <!-- End GetResponse Analytics -->
 </body>
 </html>
