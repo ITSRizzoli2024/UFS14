@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso di Public Speaking - Iscriviti Ora!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #FF6B6B;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #FF6B6B;
+            font-weight: bold;
+        }
+        .price {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        .cta-btn {
+            background-color: #FF6B6B;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .testimonials {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #FF6B6B;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff4949;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Impara a Parlare in Pubblico con il Nostro Corso di Public Speaking! 🎤</h1>
+        <p class="highlight">Prova gratuita per 1 mese, senza impegno! 💯</p>
+
+        <p>
+            Per soli <span class="highlight">14,90€ al mese</span> avrai accesso a:
+        </p>
+        <ul style="text-align: left; list-style: none; font-size: 1.1rem;">
+            <li>📚 Lezioni online interattive</li>
+            <li>📝 Dispense e guide scaricabili</li>
+            <li>🎥 Video esclusivi</li>
+            <li>💬 Supporto tramite chat con docenti esperti</li>
+        </ul>
+        <p>
+            I nostri docenti sono <span class="highlight">senior consultant con oltre 10 anni di esperienza</span> nel settore della comunicazione e del public speaking.
+        </p>
+        
+        <p class="price">Solo 14,90€/mese dopo la prova gratuita</p>
+
+        <a href="#form" class="cta-btn">Iscriviti Ora! 🚀</a>
+
+        <div class="testimonials">
+            <h2>Cosa dicono i nostri studenti?</h2>
+            <p class="testimonial">"Grazie a questo corso ho superato la mia paura di parlare in pubblico!" – <strong>Giulia R.</strong></p>
+            <p class="testimonial">"Le lezioni sono chiare e i docenti sono sempre disponibili via chat. Consigliatissimo!" – <strong>Marco L.</strong></p>
+            <p class="testimonial">"Più di 900 persone si sono già iscritte al nostro corso. Entra anche tu nella community!"</p>
+        </div>
+
+        <form id="form" action="https://app.getresponse.com/add_subscriber.html" method="POST">
+            <input type="hidden" name="campaign_token" value="FhIFh">
+            <h2>Iscriviti Ora alla Prova Gratuita</h2>
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="text" name="surname" placeholder="Cognome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="submit" value="Inizia la Prova Gratuita">
+        </form>
+    </div>
+
+</body>
+</html>
