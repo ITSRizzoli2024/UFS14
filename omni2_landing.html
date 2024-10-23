@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterPublic | Corso di Public Speaking</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #1a365d;
+            background-image: radial-gradient(#2a4365 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-pattern min-h-screen">
+        <!-- Hero Section -->
+        <div class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h1 class="text-5xl font-bold mb-6">Diventa un Public Speaker di Successo 🎯</h1>
+                <p class="text-xl mb-8">Trasforma la tua capacità di parlare in pubblico con il nostro corso premium</p>
+                <div class="bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg inline-block mb-8">
+                    Prova GRATUITA di 1 mese - Disdici quando vuoi! ⭐
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="text-center p-6 bg-blue-50 rounded-lg">
+                        <div class="text-4xl mb-4">📚</div>
+                        <h3 class="text-xl font-bold mb-2">Contenuti Premium</h3>
+                        <p>Lezioni online, video, dispense e guide scaricabili</p>
+                    </div>
+                    <div class="text-center p-6 bg-blue-50 rounded-lg">
+                        <div class="text-4xl mb-4">👨‍🏫</div>
+                        <h3 class="text-xl font-bold mb-2">Docenti Esperti</h3>
+                        <p>Team di consulenti senior con oltre 10 anni di esperienza</p>
+                    </div>
+                    <div class="text-center p-6 bg-blue-50 rounded-lg">
+                        <div class="text-4xl mb-4">💬</div>
+                        <h3 class="text-xl font-bold mb-2">Supporto Diretto</h3>
+                        <p>Chat diretta con i docenti per ogni tua domanda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Proof -->
+        <div class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Si sono già uniti più di 900 professionisti! 🚀</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <p class="mb-4">"Ho trasformato la mia paura di parlare in pubblico in sicurezza. Corso eccezionale!"</p>
+                        <p class="font-bold">Marco R. - Manager</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <p class="mb-4">"I docenti sono incredibilmente preparati e sempre disponibili. Vale ogni centesimo!"</p>
+                        <p class="font-bold">Laura B. - Imprenditrice</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <p class="mb-4">"In tre mesi ho imparato più che in anni di tentativi da autodidatta."</p>
+                        <p class="font-bold">Giuseppe M. - Libero Professionista</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing & Form -->
+        <div class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-xl mx-auto text-center">
+                    <div class="bg-blue-100 p-8 rounded-lg mb-8">
+                        <h2 class="text-3xl font-bold mb-4">Solo 14,90€ al mese</h2>
+                        <p class="text-lg mb-4">✨ Primo mese completamente gratuito ✨</p>
+                        <ul class="text-left mb-6">
+                            <li class="mb-2">✅ Accesso illimitato ai contenuti</li>
+                            <li class="mb-2">✅ Download di tutto il materiale</li>
+                            <li class="mb-2">✅ Supporto diretto dei docenti</li>
+                            <li class="mb-2">✅ Certificato di completamento</li>
+                        </ul>
+                    </div>
+
+                    <form action="https://app.getresponse.com/add_subscriber.html" method="POST" class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-6">Inizia la tua prova gratuita ora! 🎁</h3>
+                        <input type="hidden" name="campaign_token" value="FhIFh">
+                        <div class="mb-4">
+                            <input type="text" name="name" placeholder="Nome" required 
+                                class="w-full p-3 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" name="lastname" placeholder="Cognome" required 
+                                class="w-full p-3 border rounded">
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" name="email" placeholder="Email" required 
+                                class="w-full p-3 border rounded">
+                        </div>
+                        <button type="submit" 
+                            class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition">
+                            Inizia Ora
+                        </button>
+                        <p class="text-sm mt-4 text-gray-600">
+                            Nessuna carta di credito richiesta per la prova gratuita
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-900 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>© 2024 MasterPublic. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
