@@ -188,7 +188,7 @@
     function inviaEventoScroll50() {
     if (typeof GrTracking !== 'undefined') {
         console.log("Evento scroll inviato"); // Questo dovrebbe apparire in console quando l'evento è inviato
-        GrTracking('setEvent', 'scrolling'); // Usa il nome esatto dell'evento creato in GetResponse
+        GrTracking('setEvent', 'scrolla50'); // Usa il nome esatto dell'evento creato in GetResponse
     } else {
         console.log("GrTracking non è disponibile, ritentando...");
         setTimeout(inviaEventoScroll50, 100); // Riprova dopo 100ms finché GrTracking non è disponibile
