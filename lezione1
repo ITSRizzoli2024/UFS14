@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Course - Lesson 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .content {
+            padding: 20px;
+            background: #ffffff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #35424a;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .vocabulary, .grammar, .practice {
+            padding: 15px;
+            background: #f9f9f9;
+            margin-bottom: 20px;
+            border-left: 4px solid #e8491d;
+        }
+
+        .example {
+            color: #333;
+            font-style: italic;
+        }
+
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>English Course for Beginners - Lesson 1</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Welcome to Lesson 1!</h2>
+            <p>This is the first lesson of our English course for beginners. Today, we'll cover some essential vocabulary, simple grammar, and practice exercises.</p>
+
+            <div class="vocabulary">
+                <h2>Basic Vocabulary</h2>
+                <p>Here are some important words and phrases you will need for everyday conversations in English. Take some time to read through and practice pronouncing each word:</p>
+                <ul>
+                    <li><strong>Hello</strong> - A greeting used when meeting someone. Example: <span class="example">"Hello, how are you?"</span></li>
+                    <li><strong>Goodbye</strong> - Used when leaving someone. Example: <span class="example">"Goodbye, see you soon!"</span></li>
+                    <li><strong>Please</strong> - Adds politeness to requests. Example: <span class="example">"Can I have some water, please?"</span></li>
+                    <li><strong>Thank you</strong> - A way to express gratitude. Example: <span class="example">"Thank you for your help."</span></li>
+                    <li><strong>Yes</strong> / <strong>No</strong> - Simple affirmatives and negatives. Example: <span class="example">"Yes, I would like that." / "No, thank you."</span></li>
+                </ul>
+                <p>Practice using these words in simple sentences:</p>
+                <ul>
+                    <li>"Hello, my name is [Your Name]."</li>
+                    <li>"Thank you for coming."</li>
+                    <li>"Yes, I understand."</li>
+                    <li>"No, I don’t speak French."</li>
+                </ul>
+            </div>
+
+            <div class="grammar">
+                <h2>Simple Grammar: The Verb "To Be"</h2>
+                <p>In English, the verb <strong>to be</strong> is crucial for forming sentences. Here are the different forms of "to be" based on the subject:</p>
+                <ul>
+                    <li><strong>I am</strong> - Example: <span class="example">"I am a student."</span></li>
+                    <li><strong>You are</strong> - Example: <span class="example">"You are my friend."</span></li>
+                    <li><strong>He/She/It is</strong> - Example: <span class="example">"She is happy."</span></li>
+                    <li><strong>We are</strong> - Example: <span class="example">"We are learning English."</span></li>
+                    <li><strong>They are</strong> - Example: <span class="example">"They are teachers."</span></li>
+                </ul>
+                <p>Try to memorize these forms, as they are used in many basic sentences.</p>
+                
+                <h3>Practice with "To Be" Questions</h3>
+                <p>Here are some questions using "to be". Practice answering them:</p>
+                <ul>
+                    <li>Are you a student? - <span class="example">Yes, I am.</span></li>
+                    <li>Is he a teacher? - <span class="example">No, he isn’t.</span></li>
+                    <li>Are we friends? - <span class="example">Yes, we are.</span></li>
+                    <li>Are they here? - <span class="example">Yes, they are.</span></li>
+                </ul>
+            </div>
+
+            <div class="practice">
+                <h2>Practice Exercises</h2>
+                <p>Translate these sentences into English:</p>
+                <ol>
+                    <li>Sono uno studente.</li>
+                    <li>Tu sei mio amico.</li>
+                    <li>Lei è felice.</li>
+                    <li>Loro sono insegnanti.</li>
+                </ol>
+
+                <h3>Listening Practice</h3>
+                <p>Find a partner and practice saying the following greetings:</p>
+                <ul>
+                    <li>"Hello, how are you?" - "I'm good, thank you!"</li>
+                    <li>"Goodbye, see you tomorrow!"</li>
+                    <li>"Thank you for your help!"</li>
+                    <li>"Please, can you show me the way?"</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Lesson Recap: Key Points</h2>
+            <p>Here is a summary of the main points we covered in this lesson:</p>
+            <ul>
+                <li>Important words: <strong>Hello</strong>, <strong>Goodbye</strong>, <strong>Please</strong>, <strong>Thank you</strong>, <strong>Yes</strong>, <strong>No</strong>.</li>
+                <li>The verb <strong>to be</strong> is used to describe identity, feelings, and states.</li>
+                <li>Basic sentence structure in English: [Subject] + [Verb] + [Object]. Example: "I am happy."</li>
+                <li>Practice asking and answering questions using the verb "to be".</li>
+            </ul>
+            <p>Continue to practice these basics. In the next lesson, we’ll introduce more vocabulary and dive deeper into grammar rules!</p>
+        </div>
+
+        <div class="content">
+            <h2>Additional Practice: Self Introduction</h2>
+            <p>Practice introducing yourself. Use phrases like:</p>
+            <ul>
+                <li><span class="example">"Hello, my name is [Your Name]. I am learning English."</span></li>
+                <li><span class="example">"I am from [Your Country]."</span></li>
+                <li><span class="example">"I am a [Your Profession]."</span></li>
+            </ul>
+            <p>Try to speak slowly and clearly. Practice these sentences multiple times to gain confidence.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>English Course for Beginners - Lesson 1 © 2024</p>
+    </footer>
+
+</body>
+</html>
