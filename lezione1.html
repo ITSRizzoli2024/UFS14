@@ -184,12 +184,14 @@
         <p>English Course for Beginners - Lesson 1 © 2024</p>
     </footer>
 <script>
-function inviaEventoScroll50() {
+
+    function inviaEventoScroll50() {
     if (typeof GrTracking !== 'undefined') {
-        console.log("Evento scroll inviato"); // Questo dovrebbe comparire quando l'evento è inviato
-        GrTracking('setEvent', 'scrolling'); // Usa il nome esatto dell'evento creato
+        console.log("Evento scroll inviato"); // Questo dovrebbe apparire in console quando l'evento è inviato
+        GrTracking('setEvent', 'scrolling'); // Usa il nome esatto dell'evento creato in GetResponse
     } else {
-        console.log("GrTracking non è disponibile"); // Questo ti aiuterà a capire se il tracciamento è caricato
+        console.log("GrTracking non è disponibile, ritentando...");
+        setTimeout(inviaEventoScroll50, 100); // Riprova dopo 100ms finché GrTracking non è disponibile
     }
 }
 
@@ -197,31 +199,7 @@ function verificaScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const altezzaDocumento = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const percentualeScroll = (scrollTop / altezzaDocumento) * 100;
-    console.log("Percentuale scroll:", percentualeScroll); // Questo mostra la percentuale di scroll
-
-    if (percentualeScroll >= 50) {
-        inviaEventoScroll50();
-        window.removeEventListener('scroll', verificaScroll); // Rimuove il listener per evitare invii multipli
-    }
-}
-
-window.addEventListener('scroll', verificaScroll);
-
-
-
-    
-// Funzione per inviare l'evento a GetResponse quando lo scroll supera il 50%
-function inviaEventoScroll50() {
-    if (typeof GrTracking !== 'undefined') {
-        GrTracking('setEvent', 'scrolling');
-    }
-}
-
-// Funzione per calcolare la percentuale di scroll
-function verificaScroll() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const altezzaDocumento = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const percentualeScroll = (scrollTop / altezzaDocumento) * 100;
+    console.log("Percentuale scroll:", percentualeScroll); // Visualizza la percentuale di scroll nella console
 
     if (percentualeScroll >= 50) {
         inviaEventoScroll50();
@@ -231,6 +209,7 @@ function verificaScroll() {
 
 // Aggiunge un listener per l'evento di scroll
 window.addEventListener('scroll', verificaScroll);
+
 </script>
 </body>
 </html>
