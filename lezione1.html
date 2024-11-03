@@ -189,4 +189,28 @@
     </footer>
 
 </body>
+<script>
+// Funzione per inviare l'evento a GetResponse quando lo scroll supera il 50%
+function inviaEventoScroll50() {
+    if (typeof GrTracking !== 'undefined') {
+        GrTracking('setEvent', 'Scroll 50% della pagina');
+    }
+}
+
+// Funzione per calcolare la percentuale di scroll
+function verificaScroll() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const altezzaDocumento = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const percentualeScroll = (scrollTop / altezzaDocumento) * 100;
+
+    if (percentualeScroll >= 50) {
+        inviaEventoScroll50();
+        window.removeEventListener('scroll', verificaScroll); // Rimuove il listener per evitare invii multipli
+    }
+}
+
+// Aggiunge un listener per l'evento di scroll
+window.addEventListener('scroll', verificaScroll);
+</script>
+   
 </html>
