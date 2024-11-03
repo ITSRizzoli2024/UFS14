@@ -76,23 +76,13 @@
 
 <!-- GetResponse Analytics -->
   <script type="text/javascript">
-      
   (function(m, o, n, t, e, r, _){
           m['__GetResponseAnalyticsObject'] = e;m[e] = m[e] || function() {(m[e].q = m[e].q || []).push(arguments)};
           r = o.createElement(n);_ = o.getElementsByTagName(n)[0];r.async = 1;r.src = t;r.setAttribute('crossorigin', 'use-credentials');_.parentNode .insertBefore(r, _);
       })(window, document, 'script', 'https://an.gr-wcon.com/script/1d1c6206-3968-4848-801d-98df1f444c92/ga.js', 'GrTracking');
-
-
   </script>
   <!-- End GetResponse Analytics -->
-function impostaEmail() {
-    var email = document.getElementById('email').value;
-    if (typeof GrTracking !== 'undefined') {
-        GrTracking('setEmail', email);
-        console.log("Email impostata per il tracciamento:", email); // Aggiungi questo per verificare
-    }
-}
-    
+
 </head>
 <body>
        <header>
@@ -197,7 +187,7 @@ function impostaEmail() {
 // Funzione per inviare l'evento a GetResponse quando lo scroll supera il 50%
 function inviaEventoScroll50() {
     if (typeof GrTracking !== 'undefined') {
-        GrTracking('setEvent', 'Scroll 50% della pagina');
+        GrTracking('setEvent', 'scrolling');
     }
 }
 
